@@ -1,2 +1,5 @@
 node_ modules
 .env
+info.log
+README.md
+Procfile
