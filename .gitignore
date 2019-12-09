@@ -1,2 +1,2 @@
 node_ modules
-.env
+/bookmarks-server/.env
