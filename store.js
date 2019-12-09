@@ -2,7 +2,7 @@ const uuid = require('uuid/v4')
 
 const bookmarks = [
     {
-        id = uuid(),
+        id: uuid(),
         title: "Thinkful",
         url: "https://www.thinkful.com",
         description: "Think outside the classroom",
