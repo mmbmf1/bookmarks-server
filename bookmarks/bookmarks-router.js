@@ -1,8 +1,8 @@
 const express = require('express')
 const uuid = require('uuid/v4')
 const { isWebUri } = require('valid-url')
-const logger = require('../logger')
-const store = require('../store')
+const logger = require('../src/logger')
+const store = require('../src/store')
 const BookmarksService = require('./bookmarks-service')
 
 const bookmarksRouter = express.Router()
