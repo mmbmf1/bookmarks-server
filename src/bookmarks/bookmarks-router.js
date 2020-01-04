@@ -3,7 +3,7 @@ const express = require('express')
 const xss = require('xss')
 const logger = require('../logger')
 const BookmarksService = require('./bookmarks-service')
-const { getBookmarkValidationError } = require('./bookmark-validator')
+// const { getBookmarkValidationError } = require('./bookmark-validator')
 
 const bookmarksRouter = express.Router()
 const bodyParser = express.json()
@@ -40,9 +40,9 @@ bookmarksRouter
       }
     }
 
-    const error = getBookmarkValidationError(newBookmark)
+    // const error = getBookmarkValidationError(newBookmark)
 
-    if (error) return res.status(400).send(error)
+    // if (error) return res.status(400).send(error)
 
     BookmarksService.insertBookmark(
       req.app.get('db'),
@@ -111,9 +111,9 @@ bookmarksRouter
       })
     }
 
-    const error = getBookmarkValidationError(bookmarkToUpdate)
+    // const error = getBookmarkValidationError(bookmarkToUpdate)
 
-    if (error) return res.status(400).send(error)
+    // if (error) return res.status(400).send(error)
 
     BookmarksService.updateBookmark(
       req.app.get('db'),
